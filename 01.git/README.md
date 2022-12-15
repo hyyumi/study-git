@@ -2,12 +2,15 @@
 
 ## 1. git 이란
 
-- VCS(Version Control System)
+- [VCS(Version Control System)란?](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F)
   - 로컬 버전 관리
-  - cvs, subversion(SVN): 중앙 버전 관리
-  - [git](https://git-scm.com): [분산 버전 관리](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F)
+  - 중앙 버전 관리: subversion(SVN)
+  - 분산 버전 관리: [git](https://git-scm.com)
 
-- [공식 문서](https://git-scm.com/book/ko/v2)
+> 다른 VCS를 사용하던 경험이 있다면 이를 버려야 한다.   
+> Git은 미묘하게 달라서 다른 VCS에서 쓰던 개념으로는 헷갈린다.   
+> 사용자 인터페이스는 매우 비슷하지만, 정보를 취급하는 방식이 다르다.   
+> [이런 차이점(차이vs스냅샷)](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88)을 이해하면 Git을 사용하는 것이 어렵지 않다.
 
 ## 2. 설치
 
@@ -41,11 +44,9 @@ $ git config --global core.autocrlf input
 
 ## 4. Git Workflow
 
-- ### 작업 영역
-  - [Visual Git Cheat Sheet](https://ndpsoftware.com/git-cheatsheet.html)
+> 이 부분은 Git을 공부하기 위해 반드시 짚고 넘어가야 할 중요한 부분이다.
 
-<img src="../asset/git_cheatsheet.png" width="780px">
-<img src="../asset/git_workflow.png" width="780px">
+<img src="../asset/git_workflow.png" width="780px">  
 
   ||||
   |--|--|--|
@@ -54,6 +55,10 @@ $ git config --global core.autocrlf input
   |Repository|= LOCAL REPOSITORY|로컬 저장소
   ||= STASH|임시 저장소
   ||= UPSTREAM REPOSITORY|원격 저장소
+  
+  - [Visual Git Cheat Sheet](https://ndpsoftware.com/git-cheatsheet.html)
+  
+<img src="../asset/git_cheatsheet.png" width="780px">
 
 - ### 파일 상태
 
